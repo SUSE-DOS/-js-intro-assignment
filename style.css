@@ -1,0 +1,36 @@
+body {
+  font-family: "Open Sans", "Segoe UI", "Tahoma";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 100px;
+}
+
+#Celsius-block,
+#Farenheit-block,
+#Kelvin-block {
+  padding-left: 5%;
+  padding-right: 5%;
+
+  margin-left: 2%;
+  margin-right: 2%;
+
+  border: dotted 1px grey;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: rgb(116, 0, 0);
+  color: white;
+
+  padding: 10px;
+  border-radius: 5px;
+  margin: 8px;
+}

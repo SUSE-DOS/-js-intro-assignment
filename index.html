@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Index</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Le Temp Converters</h1>
+    <div class="container">
+      <div id="Celsius-block">
+        <label
+          ><h2>Temp (°C)</h2>
+          <input id="celsius-input" type="number" placeholder="Enter celsius" />
+        </label>
+
+        <label
+          ><h2>Fahrenheit (°F)</h2>
+          <input id="cel-to-far" type="number" disabled />
+        </label>
+
+        <label
+          ><h2>Kelvin (K)</h2>
+          <input id="cel-to-kel" type="number" disabled />
+        </label>
+
+        <div>
+          <button id="Celsius-convert" onclick="celsiusConvert()">
+            Convert
+          </button>
+        </div>
+      </div>
+
+      <div id="Farenheit-block">
+        <label
+          ><h2>Temp (°F)</h2>
+          <input
+            id="farenheit-input"
+            type="number"
+            placeholder="Enter fahrenheit"
+          />
+        </label>
+
+        <label
+          ><h2>Celsius (°C)</h2>
+          <input id="far-to-cel" type="number" disabled />
+        </label>
+
+        <label
+          ><h2>Kelvin (K)</h2>
+          <input id="far-to-kel" type="number" disabled />
+        </label>
+
+        <div>
+          <button id="Farenheit-convert" onclick="farenheitConvert()">
+            Convert
+          </button>
+        </div>
+      </div>
+
+      <div id="Kelvin-block">
+        <label
+          ><h2>Temp (K)</h2>
+          <input id="kelvin-input" type="number" placeholder="Enter kelvin" />
+        </label>
+
+        <label
+          ><h2>Celsius (°C)</h2>
+          <input id="kel-to-cel" type="number" disabled />
+        </label>
+
+        <label
+          ><h2>Fahrenheit (°F)</h2>
+          <input id="kel-to-far" type="number" disabled />
+        </label>
+
+        <div>
+          <button id="Kelvin-convert" onclick="kelvinConvert()">
+            Convert
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
