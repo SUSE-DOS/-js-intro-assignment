@@ -84,20 +84,34 @@ Create a program that can convert a temperature in Fahrenheit, Celsius, or Kelvi
 1. Repeat steps 1-4 for `Fahrenheit` and `Kelvin` temperatures
 1. Test your program by opening the `index.html` file in your browser
 
-**Example:**
+**Solution:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <title>Static Template</title>
+ </head>
+ <body>
+ <script src="script.js"></script>
+ </body>
+</html>
+```
+
 
 ```js
-// Starting temperature
-const celsius = ...; // Add some code to get the user input
+// Take user input and parse the value to a decimal number
+ const celciusTemp = parseFloat(prompt("please input tempratuer celcius", 0.0));
+ // convert temperature
+ const farenheightTemp = celciusTemp * 1.8 + 32;
+ const kelvinTemp = celciusTemp + 273.15;
 
-// Conversion Code
-const celsiusToFahrenheit = ...;
-const celsiusToKelvin = ...;
-
-// Print the results to the browser console
-console.log(`Celsius: #{...}`);
-console.log(`Fahrenheit: #{...}`);
-console.log(`Kelvin: #{...}`);
+// Print the values 
+ console.log(`the temparture in celcius is : ${celciusTemp}`);
+ console.log("the temparture in Farenheight is : " + farenheightTemp);
+ console.log("the temparture in Kelvin is : " + kelvinTemp);
 ```
 
 The browser will print something like this example in the console:
