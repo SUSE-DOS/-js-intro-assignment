@@ -15,7 +15,7 @@ typeof 42;
 // "number"
 
 typeof 4.2;
-// "number" (thought it would say interger)
+// "number" (Thought it would say interger)
 
 typeof "hello";
 // string
