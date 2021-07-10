@@ -11,23 +11,23 @@ What are the return values for each of the below code snippets? After coming up 
 #### Part 1:
 
 ```js
-typeof(42);
-// Your Answer
+typeof 42;
+// "number"
 
-typeof(4.2);
-// Your Answer
+typeof 4.2;
+// "number" (thought it would say interger)
 
-typeof("hello");
-// Your Answer
+typeof "hello";
+// string
 
-typeof(false);
-// Your Answer
+typeof false;
+// boolean (thought it would say fals)
 
-typeof(NaN);
-// Your Answer
+typeof NaN;
+// number
 
-typeof(4 !== 2);
-// Your Answer
+typeof (4 !== 2);
+// boolean (Didn't know what it was going to say)
 ```
 
 #### Part 2:
@@ -36,26 +36,25 @@ What's going on here? What "rules," if any, can we guess from testing these exam
 
 ```js
 "hamburger" + "s";
-// Your Answer
+// "hamburgers"
 
 "hamburgers" - "s";
-// Your Answer
+// "hamburger"
 
-"4" + "2"
-// Your Answer
+"4" + "2";
+// 6
 
 "4" - "2";
-// Your Answer
+// 2
 
 "johnny" + 5;
-// Your Answer
+// "johnny5"
 
 "johnny" - 5;
-// Your Answer
+// NaN (had no idea)
 
 99 * "baloons";
-// Your Answer
-
+// NaN
 ```
 
 ### 2: Temperature Converter
