@@ -17,64 +17,45 @@ const kelToFar = 459.67;
 
 // Button clicked for celsius conversion function
 function celsiusConvert() {
-  celsius = document.getElementById("celsius-input").value;
+  celsius = parseFloat(document.getElementById("celsius-input").value);
   document.getElementById("cel-to-far").value = (
     celsius * 1.8 +
     celToFar
   ).toFixed(2);
-  document.getElementById("cel-to-kel").value = (
-    celsius * 1 +
-    celToKel
-  ).toFixed(2);
+  document.getElementById("cel-to-kel").value = (celsius + celToKel).toFixed(2);
 
-  console.log("Celsius =", celsius, "°C");
-  console.log(
-    "Celsius to Fahrenheit =",
-    (celsius * 1.8 + celToFar).toFixed(2),
-    "°F"
-  );
-  console.log("Celsius to Kelvin =", (celsius * 1 + celToKel).toFixed(2), "K");
+  console.log(`Celsius: ${celsius}°C`);
+  console.log(`Fahrenheit: ${(celsius * 1.8 + celToFar).toFixed(2)}°F`);
+  console.log(`Kelvin: ${(celsius + celToKel).toFixed(2)}K`);
 }
 
 // Button clicked for farenheit conversion function
 function farenheitConvert() {
-  farenheit = document.getElementById("farenheit-input").value;
+  farenheit = parseFloat(document.getElementById("farenheit-input").value);
   document.getElementById("far-to-cel").value = (
     (farenheit - farToCel) /
     1.8
   ).toFixed(2);
   document.getElementById("far-to-kel").value = (
-    (farenheit * 1 + farToKel) /
+    (farenheit + farToKel) /
     1.8
   ).toFixed(2);
 
-  console.log("Fahrenheit =", farenheit, "°F");
-  console.log(
-    "Fahrenheit to Celsius =",
-    ((farenheit - farToCel) / 1.8).toFixed(2),
-    "°C"
-  );
-  console.log(
-    "Fahrenheit to Kelvin =",
-    ((farenheit * 1 + farToKel) / 1.8).toFixed(2),
-    "K"
-  );
+  console.log(`Fahrenheit: ${farenheit}°F`);
+  console.log(`Celsius: ${((farenheit - farToCel) / 1.8).toFixed(2)}°C`);
+  console.log(`Kelvin: ${((farenheit + farToKel) / 1.8).toFixed(2)}K`);
 }
 
 // Button clicked for kelvin conversion function
 function kelvinConvert() {
-  kelvin = document.getElementById("kelvin-input").value;
+  kelvin = parseFloat(document.getElementById("kelvin-input").value);
   document.getElementById("kel-to-cel").value = (kelvin - kelToCel).toFixed(2);
   document.getElementById("kel-to-far").value = (
     kelvin * 1.8 -
     kelToFar
   ).toFixed(2);
 
-  console.log("Kelvin =", kelvin, "K");
-  console.log("Kelvin to Celsius =", (kelvin - kelToCel).toFixed(2), "°C");
-  console.log(
-    "Kelvin to Fahrenheit =",
-    (kelvin * 1.8 - kelToFar).toFixed(2),
-    "°F"
-  );
+  console.log(`Kelvin: ${kelvin}K`);
+  console.log(`Celsius: ${(kelvin - kelToCel).toFixed(2)}°C`);
+  console.log(`Fahrenheit: ${(kelvin * 1.8 - kelToFar).toFixed(2)}°F`);
 }
