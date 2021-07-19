@@ -41,5 +41,5 @@ Understanding how Javascript interprets string and number variables. I was very 
 #### Do you have any suggestions to improve this assignment?
 
 ```
-I am struggling with running anything that is within a codesandbox sub-directory such as ./src/. I have to put all files within the root directory in order to preview anything. I think it would be good to understand whether this is just my browser or a wider codesandbox issue.
+This assignment was provided before any overview learning class of the infrastructure of javascript behaviour within codesandbox. The entire lesson was focused on the developer console in Google Chrome. I would have prefered understanding how the infrastructure of implementing the script tag and linking javascript files in codesandbox is undertaken first. Even a brief overview of javascript in codesandbox would have really helped and I would have avoided wasting time and overscoping the assignment, trying to figure out things that should have been shown in class.
 ```
